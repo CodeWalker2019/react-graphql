@@ -1,0 +1,59 @@
+.homeContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.startWarsLogo {
+    height: 250px;
+    position: absolute;
+}
+
+.navigationContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 100px;
+    height: 50px;
+    position: absolute;
+    top: 70%;
+}
+
+.link {
+    display: inline-block;
+    color: #FCEA35;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.35s ease;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    position: relative;
+}
+.link::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #FCEA35;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.5s ease;
+}
+.link:hover {
+    font-size: 25px;
+}.link:hover::after {
+    width: 100%;
+}
+
+.starWarsIntroVideo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(35%);
+}

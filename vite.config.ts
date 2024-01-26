@@ -7,6 +7,7 @@ export default defineConfig({
   resolve: {
     alias: {
       views: path.resolve(__dirname, './src/views'),
+      assets: path.resolve(__dirname, './src/assets'),
     },
   },
 });
